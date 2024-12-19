@@ -11,6 +11,7 @@ export default {
         orange: "#FFA500",
         green: "#539D43",
         blue: "#0066b2",
+        black: "#0E0E0E",
       },
       backgroundImage: {
         "yellow-gradient":"linear-gradient(to right, #FFE27A, #FFBA57, #98DB7C, #8BCAFF)",
