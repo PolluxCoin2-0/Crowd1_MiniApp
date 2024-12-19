@@ -19,8 +19,8 @@ const ListOfWalletModal = () => {
 //   }
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-      <div className="bg-black  p-6 rounded-lg shadow-lg w-80 max-h-[80vh] overflow-y-auto min-h-1/2">
+    <div className="fixed inset-0 bg-black bg-opacity-50  flex items-center justify-center">
+      <div className="bg-black  p-6 rounded-2xl shadow-lg w-80 max-h-[80vh] overflow-y-auto min-h-1/2">
       <div
         className="absolute top-[10%] left-0 w-[1000px] h-[50px] bg-blue blur-3xl rounded-[50%] opacity-20"
         style={{
