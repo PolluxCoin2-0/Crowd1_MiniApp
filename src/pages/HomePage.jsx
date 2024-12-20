@@ -10,9 +10,7 @@ import SwitchWalletModal from "./connectWallet/SwitchWalletModal";
 
 const HomePage = () => {
     const [openWalletModal, setOpenWalletModal] = useState(false);
-
-   
-  return (
+    return (
     <div className="bg-black min-h-screen p-4">
         <div
         className="absolute top-[10%] left-0 w-[1000px] h-[50px] bg-blue blur-3xl rounded-[50%] opacity-70"
@@ -20,8 +18,7 @@ const HomePage = () => {
           transform: "translate(-50%, -50%) rotate(-130deg)",
         }}
       ></div>
-
-
+        
         <div className="bg-black border-[1px] border-white border-opacity-10 rounded-2xl flex flex-row justify-between items-center p-2">
         <div className="flex flex-row items-center space-x-2 ">
         <RxAvatar size={20} className="text-white"/>

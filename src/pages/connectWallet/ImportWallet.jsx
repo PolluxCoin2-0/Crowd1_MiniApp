@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 
 const RegisterWallet = () => {
-  
   return (
      <div className="flex items-center justify-center min-h-screen p-6 w-full bg-black">
       <div

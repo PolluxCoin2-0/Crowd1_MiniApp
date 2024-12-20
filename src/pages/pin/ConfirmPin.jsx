@@ -51,7 +51,7 @@ const ConfirmPin = () => {
     }
   };
 
-  return (
+return (
     <div className="flex items-center justify-center min-h-screen w-full p-6 bg-black">
       <div
         className="absolute top-[10%] left-0 w-[1000px] h-[50px] bg-blue blur-3xl rounded-[50%] opacity-70"
@@ -59,6 +59,11 @@ const ConfirmPin = () => {
           transform: "translate(-50%, -50%) rotate(-130deg)",
         }}
       ></div>
+      {/* <div className="bg-black rounded-2xl border-[1px] border-white border-opacity-50">
+        <p className="text-xl font-bold bg-clip-text bg-transparent">Connect Wallet</p>
+        <p className="text-2xl font-bold bg-clip-text bg-transparent">Crowd1 Wallet</p>
+        
+      </div> */}
       <div className="px-6 py-4 bg-black border-[1px] border-white border-opacity-10 rounded-2xl shadow-lg transition-shadow duration-300 hover:shadow-xl w-full">
         <h2 className="text-center mb-6 text-xl font-extrabold text-white nunito-font">
           Enter Your PIN
