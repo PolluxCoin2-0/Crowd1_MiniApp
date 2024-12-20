@@ -10,11 +10,11 @@ const WelcomeScreen = () => {
           transform: "translate(-50%, -50%) rotate(-130deg)",
         }}
       ></div>
-    <div className="px-6 py-5 bg-white rounded-2xl shadow-xl transition-shadow duration-300 hover:shadow-2xl w-full ">
+    <div className="px-6 py-5 bg-black border-[1px] border-white border-opacity-10 rounded-2xl shadow-xl transition-shadow duration-300 hover:shadow-2xl w-full ">
      <div className="flex justify-end cursor-pointer">
-     <RiCloseLargeFill />
+     <RiCloseLargeFill color="#ffffff" size={20}/>
     </div>
-    <p className="text-center font-bold text-lg pb-4 nunito-font">Welcome to Crowd1 Mini</p>
+    <p className="text-center font-bold text-lg pb-4 nunito-font text-white">Welcome to Crowd1 Mini</p>
     <div className="flex flex-row items-center justify-center space-x-2 pb-3 w-full">
      <Link to="/importWallet" className="nunito-font w-1/2 whitespace-nowrap text-center bg-yellow-gradient hover:bg-orange-gradient text-base font-bold px-4 py-3 rounded-2xl">
        Import Wallet

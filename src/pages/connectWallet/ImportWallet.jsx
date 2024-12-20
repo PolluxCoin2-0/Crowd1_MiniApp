@@ -12,13 +12,13 @@ const RegisterWallet = () => {
           transform: "translate(-50%, -50%) rotate(-130deg)",
         }}
       ></div>
-     <div className="px-6 py-5 bg-white rounded-2xl shadow-xl transition-shadow duration-300 hover:shadow-2xl w-full ">
+     <div className="px-6 py-5 bg-black border-[1px] border-white border-opacity-10 rounded-2xl shadow-xl transition-shadow duration-300 hover:shadow-2xl w-full ">
       <div className="flex justify-end cursor-pointer">
-     <RxCross2 
+     <RxCross2 color="#ffffff" size={20}
     //  onClick={()=>navigate("/tap")}
      />
      </div>
-     <p className="text-center font-bold text-lg pb-4 nunito-font">Login Your Wallet</p>
+     <p className="text-center font-bold text-lg pb-4 nunito-font text-white">Login Your Wallet</p>
      <div className="flex flex-col items-center space-y-4 justify-between pb-3">
       <input 
     //   value={privateKey}
@@ -32,7 +32,7 @@ const RegisterWallet = () => {
      <Link to="/homepage">
      <button 
     //  onClick={handleSubmit} 
-     className="nunito-font w-full text-center bg-yellow-gradient hover:bg-orange-gradient text-base font-bold px-4 py-3 rounded-2xl">
+     className="nunito-font w-full text-center bg-yellow-gradient hover:bg-orange-gradient text-base font-bold px-[90px] py-3 rounded-2xl">
       Login Wallet
       </button>
       </Link>

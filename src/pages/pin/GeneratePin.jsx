@@ -4,7 +4,6 @@ import { setCloudStorageData } from "../../utils/TelegramCloudStorage";
 import { encryptString } from "../../utils/Encryption";
 import { toast } from "react-toastify";
 
-
 const GeneratePin = () => {
   const [newPin, setNewPin] = useState(""); // State to store the input PIN
   const navigate = useNavigate();
@@ -51,8 +50,8 @@ const GeneratePin = () => {
           transform: "translate(-50%, -50%) rotate(-130deg)",
         }}
       ></div>
-      <div className="px-6 py-6 bg-white rounded-2xl shadow-xl transition-shadow duration-300 hover:shadow-2xl w-full ">
-        <h2 className="text-center mb-4 text-xl font-bold text-gray-900 nunito-font">
+      <div className="px-6 py-6 bg-black border-[1px] border-white border-opacity-10 rounded-2xl shadow-xl transition-shadow duration-300 hover:shadow-2xl w-full ">
+        <h2 className="text-center mb-4 text-xl font-bold text-white nunito-font">
           Create Your PIN
         </h2>
         <form 
@@ -60,7 +59,7 @@ const GeneratePin = () => {
         >
           <div className="mb-4">
             <label
-              className="block text-gray-700 text-sm font-semibold mb-2 nunito-font"
+              className="block text-white text-sm font-semibold mb-2 nunito-font"
               htmlFor="pin"
             >
               Enter a 4-digit PIN

@@ -7,7 +7,6 @@ import { setPinEntered } from "../../redux/slice";
 
 const ConfirmPin = () => {
   const navigate = useNavigate();
-
   const handlePinComplete = async (value) => {
     console.log(value)
     try {
@@ -17,7 +16,6 @@ const ConfirmPin = () => {
         toast.error("First, Generate Your Pin!");
         return;
       }
-
       // Decrypt the PIN
       const pin = decryptString(encryptPin);
       console.log("Encrypted PIN:", encryptPin);
@@ -61,8 +59,8 @@ const ConfirmPin = () => {
           transform: "translate(-50%, -50%) rotate(-130deg)",
         }}
       ></div>
-      <div className="px-6 py-4 bg-white rounded-2xl shadow-lg transition-shadow duration-300 hover:shadow-xl w-full">
-        <h2 className="text-center mb-6 text-xl font-extrabold text-gray-800 nunito-font">
+      <div className="px-6 py-4 bg-black border-[1px] border-white border-opacity-10 rounded-2xl shadow-lg transition-shadow duration-300 hover:shadow-xl w-full">
+        <h2 className="text-center mb-6 text-xl font-extrabold text-white nunito-font">
           Enter Your PIN
         </h2>
         <PinInput
@@ -92,13 +90,13 @@ const ConfirmPin = () => {
           autoSelect={true}
           regexCriteria={/^\d{4}$/} // Ensure only 4 numeric digits
         />
-        <p className="text-center mt-4 text-gray-600 text-sm md:text-base nunito-font font-semibold">
-          Dont have a PIN?{" "}
+        <p className="text-center mt-4 text-white text-sm md:text-base nunito-font font-semibold">
+          Don't have a PIN?{" "}
           <Link
             to="/generatePin"
-            className="underline nunito-font font-bold text-sm md:text-base"
+            className="underline nunito-font font-bold text-[16px] cursor-pointer"
           >
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange via-green to-blue">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange via-green to-blue cursor-pointer">
               Generate One
             </span>
           </Link>
